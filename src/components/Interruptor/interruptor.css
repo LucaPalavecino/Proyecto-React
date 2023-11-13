@@ -1,0 +1,24 @@
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(119, 119, 119);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.apagado .circulo{
+    background-color: black;
+}
+
+.encendido .circulo{
+    background-color: green;
+}
