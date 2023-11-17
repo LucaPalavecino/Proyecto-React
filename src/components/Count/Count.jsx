@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 
-const Count = ({inicial,stock}) => {
+const Count = ({initial,stock}) => {
 
-    console.log(inicial)
+    console.log(initial)
     console.log(stock)
 
     return (

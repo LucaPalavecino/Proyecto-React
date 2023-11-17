@@ -2,7 +2,7 @@ import React from 'react';
 import "./product.css"
 import ItemCount from '../ItemCount/ItemCount';
 
-const Products = (product) => {
+const Products = (Product) => {
 
     const onAdd = () => {
 

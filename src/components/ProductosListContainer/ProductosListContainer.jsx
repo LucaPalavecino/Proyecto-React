@@ -3,41 +3,44 @@ import ProductList from '../ProductList/ProductList';
 
 const ProductosListContainer = () => {
 
-    const [productData, setProductData] = useState({})
+    const [productData, setProductData] = useState([])
 
     useState(() => {
         const promiseData = () => {
             return new Promise((resolve) => {
                 setTimeout(() => {
 
-                    const productosFile = "/products.js"
+                    const productosFile = "/data/products.js"
 
-                    fetch(productosFile).
-                    then((response)=response.json())
-                        .then((data)=>{
+                    fetch(productosFile)
+                        .then((response) = response.json())
+                        .then((data) => {
                             resolve(data)
-                    })
-                    
-                },2000)
+                        })
+
+                }, 2000)
             })
         }
 
-        promiseData().then((data)=>{
+        promiseData().then((data) => {
             setProductData(data)
         })
 
-    }, [])
+    }, [productData])
 
     return (
         <div>
             {productData.length == 0 ?
-            <p>Cargando...</p>
-            :
-            productData.map((product)=>{
-                <ProductList key={product.id} product={product}/> 
-            })
-            
-        }
+                <p>Cargando...</p>
+                :
+                productData.map((product) => 
+                    (
+                    <ProductList key={product.id} product={product} />
+                    )
+                    
+                )
+
+            }
         </div>
     );
 };

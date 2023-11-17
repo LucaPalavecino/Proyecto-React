@@ -2,7 +2,7 @@
     {
         "id":1,
         "name":"Equipo de termo Stanly",
-        "precio":25.000,
+        "precio":25000,
         "img":"",
         "description": "Podes olvidarte el mate cebado hasta 24 hs",
         "stock": 10
@@ -11,7 +11,7 @@
     {
         "id":2,
         "name":"Juego de griferia",
-        "precio":25.000,
+        "precio":3000,
         "img":"",
         "description": "Bañate con clase",
         "stock": 32
@@ -20,7 +20,7 @@
     {
         "id":3,
         "name":"Drone PARROT",
-        "precio":25.000,
+        "precio":25000,
         "img":"",
         "description": "Captura imageles de los paisajes de la mejor manera",
         "stock": 5
@@ -29,7 +29,7 @@
     {
         "id":4,
         "name":"Uranio 427",
-        "precio":25.000,
+        "precio":25,
         "img":"",
         "description": "Ideal para tus proyectos de Fisica",
         "stock": 500
@@ -38,7 +38,7 @@
     {
         "id":5,
         "name":"salero ",
-        "precio":25.000,
+        "precio":25000,
         "img":"",
         "description": "Para darle sabor a tus comidas",
         "stock": 600
