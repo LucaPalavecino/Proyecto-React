@@ -14,6 +14,7 @@
 
 .nav-list {
     display: flex;
+    gap: 5rem;
     margin-top: 105px;
     width: max-content;
     font-size: 14px;
